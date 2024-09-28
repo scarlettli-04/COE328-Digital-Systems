@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, /home/student2/s225li/coe328/lab2/Scarlett (2)/lab2.vhd
+source_file = 1, /home/student2/s225li/coe328/lab2/Scarlett (2)/db/lab2.cbx.xml
+source_file = 1, /CMC/tools/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, /CMC/tools/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, /CMC/tools/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, /CMC/tools/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = lab2
+instance = comp, \x1~I\, x1, lab2, 1
+instance = comp, \x3~I\, x3, lab2, 1
+instance = comp, \x4~I\, x4, lab2, 1
+instance = comp, \x2~I\, x2, lab2, 1
+instance = comp, \f~0\, f~0, lab2, 1
+instance = comp, \f~I\, f, lab2, 1
