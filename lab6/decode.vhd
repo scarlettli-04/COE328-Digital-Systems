@@ -3,8 +3,8 @@ USE ieee.std_logic_1164.all ;
 
 ENTITY decode IS
 	PORT (state	:	IN  STD_LOGIC_VECTOR(2 DOWNTO 0) ; -- 3 to 8
-				En	:	IN  STD_LOGIC ;
-		  opcode	:	OUT STD_LOGIC_VECTOR(0 TO 7) ) ;
+		En	:	IN  STD_LOGIC ;
+	  opcode	:	OUT STD_LOGIC_VECTOR(0 TO 7) ) ;
 END decode ;
 
 ARCHITECTURE Behavior OF decode IS
