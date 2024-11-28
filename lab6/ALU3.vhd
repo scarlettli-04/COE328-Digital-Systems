@@ -5,10 +5,10 @@ USE ieee.numeric_std.all;
 
 entity ALU3 is -- ALU unit includes Reg. 3 
 	port (		clk	:   in  std_logic ; 
-			student_ID	:	 in UNSIGNED(3 downto 0) ;
-				  A, B	:   in  UNSIGNED(7 downto 0) ; -- 8-bit inputs A & B from Reg. 1 & Reg. 2 
-				opcode	:   in  UNSIGNED(7 downto 0) ; -- 8-bit opcode from Decoder 
-					  R	:   out std_logic) ; 
+	      student_ID	:	 in UNSIGNED(3 downto 0) ;
+	      		A, B	:   in  UNSIGNED(7 downto 0) ; -- 8-bit inputs A & B from Reg. 1 & Reg. 2 
+			opcode	:   in  UNSIGNED(7 downto 0) ; -- 8-bit opcode from Decoder 
+			R	:   out std_logic) ; 
 end ALU3 ; 
 
 architecture calculation of ALU3 is
