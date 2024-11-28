@@ -3,12 +3,12 @@ USE ieee.std_logic_1164.all;
 
 entity statemachine IS
 	port (data_in, clk, reset	:	in std_logic ;
-						student_id	:	out std_logic_vector(3 downto 0) ;
-					current_state	:	out std_logic_vector(2 downto 0));
+			student_id	:	out std_logic_vector(3 downto 0) ;
+			current_state	:	out std_logic_vector(2 downto 0)) ;
 end statemachine ;
 
 architecture fsm of statemachine is
-	type state_type is (s0, s1, s2, s3, s4, s5, s6, s7);
+	type state_type is (s0, s1, s2, s3, s4, s5, s6, s7) ;
 	signal yfsm : state_type ;
 	
 begin
