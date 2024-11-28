@@ -4,7 +4,7 @@ USE ieee.std_logic_1164.all;
 entity registerB IS
 	port (		B	:	in    std_logic_vector(7 downto 0) ; -- 8-bit A input 
 		reset, clk	:	in    std_logic ; 
-					Q	:	out  std_logic_vector(7 downto 0)) ; -- 8-bit output 
+			Q	:	out  std_logic_vector(7 downto 0)) ; -- 8-bit output 
 	end registerB; 
 	
 architecture behavior of registerB is 
