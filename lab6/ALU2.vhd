@@ -4,11 +4,11 @@ USE ieee.std_logic_unsigned.all;
 USE ieee.numeric_std.all;
 
 entity ALU2 is -- ALU unit includes Reg. 3 
-	port (		clk   :   in  std_logic ;
-				  A, B   :   in  UNSIGNED(7 downto 0) ; -- 8-bit inputs A & B from Reg. 1 & Reg. 2 
-				opcode   :   in  UNSIGNED(7 downto 0) ; -- 8-bit opcode from Decoder 
-				R1, R2   :   out UNSIGNED(3 downto 0) ; -- 8-bit Result split in two 4-bit digits
-				  Sign   :   out std_logic) ; 
+	port (	 clk   :   in  std_logic ;
+	      	A, B   :   in  UNSIGNED(7 downto 0) ; -- 8-bit inputs A & B from Reg. 1 & Reg. 2 
+	      opcode   :   in  UNSIGNED(7 downto 0) ; -- 8-bit opcode from Decoder 
+	      R1, R2   :   out UNSIGNED(3 downto 0) ; -- 8-bit Result split in two 4-bit digits
+	      	Sign   :   out std_logic) ; 
 end ALU2 ; 
 
 architecture calculation of ALU2 is
