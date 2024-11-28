@@ -2,8 +2,8 @@ LIBRARY ieee ;
 USE ieee.std_logic_1164.all ;
 
 ENTITY ssegmodified IS
-	PORT (	R : IN STD_LOGIC ;
-			leds : OUT STD_LOGIC_VECTOR(1 TO 7)) ;
+	PORT ( R	:	IN STD_LOGIC ;
+	      less	:	OUT STD_LOGIC_VECTOR(1 TO 7)) ;
 END ssegmodified ;
 
 ARCHITECTURE Behavior OF ssegmodified IS
