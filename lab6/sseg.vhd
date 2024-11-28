@@ -2,9 +2,9 @@ LIBRARY ieee ;
 USE ieee.std_logic_1164.all ;
 
 ENTITY sseg IS
-	PORT (			bcd	:	IN STD_LOGIC_VECTOR(3 DOWNTO 0) ;
-						sign	:	IN STD_LOGIC ;
-			leds, negative	:	OUT STD_LOGIC_VECTOR(0 TO 6)) ;
+	PORT (		bcd	:	IN STD_LOGIC_VECTOR(3 DOWNTO 0) ;
+			sign	:	IN STD_LOGIC ;
+		leds, negative	:	OUT STD_LOGIC_VECTOR(0 TO 6)) ;
 END sseg ;
 
 ARCHITECTURE Behavior OF sseg IS
