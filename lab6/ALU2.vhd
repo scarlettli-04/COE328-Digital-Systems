@@ -16,7 +16,7 @@ architecture calculation of ALU2 is
 begin 
 
 	Reg1 <= A ;
-	Reg2 <= ((NOT(B(7 downto 4))) & '0' &'0' & '0' & '0') + ('0' &'0' & '0' & '0' & (B(3 downto 0))) ; -- invert first four bits of B and concate with the original last 4 bits of B
+	Reg2 <= (NOT(B(7 downto 4))) & (B(3 downto 0)) ; -- invert first four bits of B and concate with the original last 4 bits of B
 	
 	process ( clk, opcode ) 
 	begin 
